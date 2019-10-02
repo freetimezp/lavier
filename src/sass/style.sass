@@ -11,6 +11,9 @@ img
 
 .container 
 	max-width: 1108px
+ @media screen and (max-width: 575px)
+  padding: 0 
+
 
 ul,li,a 
  text-decoration: none
@@ -22,26 +25,47 @@ ul,li,a
 	background-size: cover
 	background-position: center
 	background-repeat: no-repeat
+ @media screen and (max-width: 575px)
+  padding: 45px 5px
+
 
 .header
-	&-logo
+	&__logo
 	 width: 125px
 	 height: 63px
 	 display: block
+  @media screen and (max-width: 575px)
+   margin: 0 auto
+   width: 80px
+   height: 40px
 	&-contacts
 	 color: #2D2B2B 
-	&-title
+	&__title
 	 margin-top: 90px	
 	 margin-bottom: 40px
   font-size: 25px
   font-weight: 700
   color: #e17976
- &-subtitle
+  @media screen and (max-width: 575px)
+   margin-top: 60px 
+ &__subtitle
  	max-width: 790px
   color: #2D2B2B 
   font-size: 17px
   font-weight: 500
-
+  @media screen and (max-width: 575px)
+   padding-bottom: 30px
+   font-size: 14px
+   max-width: 280px
+ &__button
+  background-color: #e17976
+  padding: 18px 40px 
+  border-radius: 3px
+  color: #f9e8e8
+  text-transform: uppercase
+  font-weight: 600
+  @media screen and (max-width: 575px)
+   padding: 15px 30px
 
 .s-propositon
 	background-color: #fef6f6
@@ -49,6 +73,8 @@ ul,li,a
 
 .propositon
 	padding: 70px 0 30px 
+ @media screen and (max-width: 575px)
+  padding: 30px 15px 
  &-item
   background-color: #fefefe
   border: 2px solid #eeeeee
@@ -96,6 +122,8 @@ ul,li,a
    padding: 0 15px
    color: #7d7d7d
    margin-bottom: 35px
+   @media screen and (max-width: 575px)
+    padding: 0 5px 0 15px
   &__button
    display: block
    padding: 18px 50px
@@ -105,8 +133,8 @@ ul,li,a
    border-radius: 3px
    border: 1px solid transparent
    cursor: pointer
-
-
+   @media screen and (max-width: 575px)
+    padding: 15px 30px
 
 .s-reviews
 	padding-right: 50px
@@ -114,6 +142,14 @@ ul,li,a
 	background-size: cover
 	background-position: center
 	background-repeat: no-repeat
+ @media screen and (max-width: 575px)
+  padding: 0
+
+
+.s-reviews
+ .container
+  @media screen and (max-width: 575px)
+   padding: 0 
 
 .reviews
 	padding: 60px 130px 30px
@@ -121,6 +157,10 @@ ul,li,a
  margin-left: auto
  text-align: center
  background-color: #fefefe
+ @media screen and (max-width: 575px)
+  padding: 30px 0
+  max-width: 290px
+  margin: auto
  &-title 
   display: block 
   margin: 0 auto 50px
@@ -133,13 +173,27 @@ ul,li,a
   margin-bottom: 25px
   &.reviews-item__answer
    transform: translateX(60px)
+   @media screen and (max-width: 575px)
+    transform: translateX(15px)
+    .reviews-item__message
+     max-width: 250px
+     margin-left: auto     
   &__image
    width: 50px
    height: 50px
    margin-top: -10px
    margin-left: -10px
+   @media screen and (max-width: 575px)
+    width: 30px
+    height: 30px
+    margin-left: 0
+    transform: translateY(-10px)
    img 
     border-radius: 50px
+  &__text 
+   font-size: 15px
+   @media screen and (max-width: 575px)
+    font-size: 13px
   &__message 
    padding: 14px
    background-color: #eef0f2
@@ -148,6 +202,8 @@ ul,li,a
    text-align: left
    position: relative
    margin-bottom: 10px
+   @media screen and (max-width: 575px)
+    padding: 7px
    &-like
     position: absolute
     top: 50%
@@ -160,15 +216,25 @@ ul,li,a
     display: flex
     justify-content: center
     align-items: center
+    @media screen and (max-width: 575px)
+     padding: 0 2px 2px
+     right: -4px
+     box-shadow: -1px 1px 3px rgba(0,0,0, 0.2)
     &-up
      color: #fff
      background-color: #4480fb
      border-radius: 60%
      padding: 4px 5px
      font-size: 12px
+     @media screen and (max-width: 575px)
+      font-size: 10px
+      padding: 3px 3px
     &-count
      padding: 3px 5px
      font-size: 14px
+     @media screen and (max-width: 575px)
+      font-size: 10px
+      padding: 3px 3px
   &__userName
    font-weight: 700
    color: #5370a5
@@ -192,31 +258,53 @@ ul,li,a
 
 .s-order
 	background-color: #fefefe
+ .container 
+  @media screen and (max-width: 575px)
+   padding: 0
 
 .order
 	padding: 70px 90px
 	max-width: 800px
 	margin: 0 auto
+ @media screen and (max-width: 575px)
+  padding: 30px 15px
  &__title
   font-size: 25px
   font-weight: 700
   margin-bottom: 10px
+  @media screen and (max-width: 575px)
+   text-align: center
+   font-size: 20px
+   max-width: 300px
  &__subtitle
   color: #a6a7a8
   margin-bottom: 40px
+  @media screen and (max-width: 575px)
+   max-width: 230px
+   font-size: 12px
+   text-align: center
+   margin-bottom: 20px
  &__descr
   color: #898a8a
   margin-bottom: 50px
+  @media screen and (max-width: 575px)
+   max-width: 230px
+   font-size: 12px
+   text-align: center
  &-form 
   margin-bottom: 30px
   &-block
    max-width: 215px
    margin-right: 20px
    margin-bottom: 50px
+   @media screen and (max-width: 575px)
+    max-width: 240px
   &__input
    max-width: 100%
    padding: 14px 10px
    border: 1px solid #cad5e1
+   @media screen and (max-width: 575px)
+    width: 100%
    &::placeholder
     color: #bebebe
    &-name
@@ -246,18 +334,82 @@ ul,li,a
 .s-footer
 	padding: 15px 0
 	background-color: #222222
-
+ @media screen and (max-width: 575px)
+  padding: 0
+  
 
 .footer
 	color: #858585
+ @media screen and (max-width: 575px)
+  padding: 15px 0 0 
+  margin: 0 
 	&__logo 
 	 width: 60px
 	 height: 60px
 	&-top
-	 &__text 
-	  &-bold 
-	   font-weight: 700
-	   color: #d7d7d7
-	 &__icon
-	  margin-left: 10px
-	  font-size: 30px
+  margin-bottom: 20px
+  @media screen and (max-width: 575px)
+   margin-bottom: 0
+  &__text 
+   line-height: 1.1em
+   &-confidential
+    text-decoration: underline
+    color: #e7e7e7
+    font-weight: 500
+   &-bold 
+    font-weight: 700
+    color: #d7d7d7
+  &__link
+   margin-left: 10px
+  &__icon
+   font-size: 30px
+   color: #aaacaf
+ &-main 
+  margin-bottom: 25px
+ &-advantages
+  &__image
+   width: 60px
+   height: 60px
+ &-pay
+  &__text
+   font-size: 17px
+   margin-bottom: 10px
+  &__icon
+   margin-right: 5px
+   width: 60px
+   height: auto
+
+.popup 
+ max-width: 290px
+
+
+.modal
+ left: 15px
+ &-body
+  position: relative
+ &-close 
+  cursor: pointer
+  height: 14px
+  position: absolute
+  top: 15px
+  right: 10px
+  width: 23px
+  background-color: #f1dddc
+  padding: 15px
+  border-radius: 5px
+  box-shadow: 1px 1px 4px rgba(#f1dddc,0.8)
+  .modal-close__line
+   &--top 
+    top: 13px
+    transform: rotate(45deg)
+   &--bottom 
+    top: 13px
+    transform: rotate(-45deg)
+  &__line
+   background-color: #000
+   display: block 
+   height: 2px
+   left: 0
+   position: absolute 
+   transition: all 0.6s ease 
+   width: 100%
